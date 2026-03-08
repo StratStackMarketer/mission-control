@@ -1,0 +1,67 @@
+{
+  "source": "CAMS/KFintech Consolidated Account Statement (CAS)",
+  "statement_date": "2026-03-08",
+  "currency": "INR",
+  "total_invested_value": 36998.15,
+  "total_market_value": 365882.5,
+  "total_gain_loss_absolute": 8786.43,
+  "total_gain_loss_percentage": 23.7,
+  "holdings": [
+    {
+      "type": "SoA",
+      "folio_number": "910131337235",
+      "scheme_name": "Axis ELSS Tax Saver Fund - Regular Growth",
+      "units": 492.815,
+      "nav": 92.9042,
+      "invested_value": 36998.15,
+      "market_value": 45784.58,
+      "gain_loss_absolute": 8786.43,
+      "gain_loss_percentage": 23.7
+    },
+    {
+      "type": "Demat",
+      "client_id": "12081600-21551847",
+      "scheme_name": "QUANT MF-QUANT TAX PLAN-DIRECT-GROWTH",
+      "units": 394.973,
+      "nav": null,
+      "invested_value": 0,
+      "market_value": 158123.89,
+      "gain_loss_absolute": null,
+      "gain_loss_percentage": null
+    },
+    {
+      "type": "Demat",
+      "client_id": "12081600-21551847",
+      "scheme_name": "PPFAS MF-PPFAS ELSS TAX SAVER FUND-DIRECT-GROWTH",
+      "units": 2560.312,
+      "nav": null,
+      "invested_value": 0,
+      "market_value": 82864.5,
+      "gain_loss_absolute": null,
+      "gain_loss_percentage": null
+    },
+    {
+      "type": "Demat",
+      "client_id": "12081600-21551847",
+      "scheme_name": "ZERODHA MF-ZERODHA ELSS TAX SAVER NIFTY LARGEMIDCAP 250 INDEX FUND-DIRECT-GROWTH",
+      "units": 4040.79,
+      "nav": null,
+      "invested_value": 0,
+      "market_value": 55471.97,
+      "gain_loss_absolute": null,
+      "gain_loss_percentage": null
+    },
+    {
+      "type": "Demat",
+      "client_id": "12081600-21551847",
+      "scheme_name": "KOTAK MAHINDRA MF-KOTAK TAX SAVER - DIRECT PLAN - GROWTH",
+      "units": 178.234,
+      "nav": null,
+      "invested_value": 0,
+      "market_value": 23637.56,
+      "gain_loss_absolute": null,
+      "gain_loss_percentage": null
+    }
+  ],
+  "note": "Demat holdings in the CAS do not show invested value or NAV, only the final market value. The 'gain/loss' for these cannot be calculated from this statement alone."
+}

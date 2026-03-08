@@ -21,7 +21,7 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, description, status, confidence, tags } = body;
+    const { name, description, status, confidence, tags, content } = body;
 
     const newIdea = await prisma.idea.create({
       data: {
@@ -30,6 +30,7 @@ export async function POST(request: Request) {
         status,
         confidence,
         tags: tags ? JSON.stringify(tags) : undefined,
+        content,
       },
     });
     return NextResponse.json(newIdea, { status: 201 });

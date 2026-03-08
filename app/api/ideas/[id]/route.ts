@@ -28,7 +28,7 @@ export async function PUT(
 ) {
   try {
     const body = await request.json();
-    const { name, description, status, confidence, tags } = body;
+    const { name, description, status, confidence, tags, content } = body;
 
     const updatedIdea = await prisma.idea.update({
       where: { id: params.id },
@@ -38,6 +38,7 @@ export async function PUT(
         status,
         confidence,
         tags: tags ? JSON.stringify(tags) : undefined,
+        content,
       },
     });
     return NextResponse.json(updatedIdea);

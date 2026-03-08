@@ -147,6 +147,7 @@ model Idea {
   status      String   @default("Idea")
   confidence  Int      @default(5)
   tags        String?  // JSON array as string
+  content     String?  // Markdown content for the full business plan
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }

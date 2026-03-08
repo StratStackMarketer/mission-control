@@ -6,6 +6,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Plus, Edit, Trash, MoreHorizontal } from 'lucide-react';
 
+import { useRouter } from 'next/navigation';
+
 // --- TYPES ---
 interface Idea {
   id: string;
@@ -143,6 +145,8 @@ function IdeaForm({ idea, onSave, onCancel }: { idea?: Idea; onSave: () => void;
 
 
 function IdeasDataTable({ ideas, onEdit, onDelete }: { ideas: Idea[]; onEdit: (idea: Idea) => void; onDelete: (id: string) => void; }) {
+    const router = useRouter();
+
     if (ideas.length === 0) {
         return <div className="card text-center text-gray-500">No ideas yet. Add one to get started!</div>;
     }
@@ -162,7 +166,7 @@ function IdeasDataTable({ ideas, onEdit, onDelete }: { ideas: Idea[]; onEdit: (i
                 </thead>
                 <tbody>
                     {ideas.map((idea) => (
-                        <tr key={idea.id} className="bg-white border-b hover:bg-gray-50">
+                        <tr key={idea.id} className="bg-white border-b hover:bg-gray-50 cursor-pointer" onClick={() => router.push(`/ideas/${idea.id}`)}>
                             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                 {idea.name}
                                 <p className="text-xs text-gray-400 font-normal truncate max-w-xs">{idea.description}</p>
@@ -177,8 +181,8 @@ function IdeasDataTable({ ideas, onEdit, onDelete }: { ideas: Idea[]; onEdit: (i
                                 ))}
                             </td>
                             <td className="px-6 py-4 text-right">
-                                <button onClick={() => onEdit(idea)} className="p-1 text-gray-500 hover:text-indigo-600"><Edit size={16}/></button>
-                                <button onClick={() => onDelete(idea.id)} className="p-1 text-gray-500 hover:text-red-600"><Trash size={16}/></button>
+                                <button onClick={(e) => { e.stopPropagation(); onEdit(idea); }} className="p-1 text-gray-500 hover:text-indigo-600"><Edit size={16}/></button>
+                                <button onClick={(e) => { e.stopPropagation(); onDelete(idea.id); }} className="p-1 text-gray-500 hover:text-red-600"><Trash size={16}/></button>
                             </td>
                         </tr>
                     ))}

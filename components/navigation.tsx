@@ -12,19 +12,21 @@ import {
   FileText, 
   Clock,
   Brain,
-  Activity
+  Activity,
+  Lightbulb
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navItems = [
   { href: '/', icon: Home, label: 'Dashboard' },
+  { href: '/nerve-center', icon: Activity, label: 'Nerve Center' },
+  { href: '/ideas', icon: Lightbulb, label: 'Ideas' },
   { href: '/tasks', icon: CheckSquare, label: 'Tasks' },
   { href: '/approvals', icon: Shield, label: 'Approvals' },
   { href: '/calendar', icon: Calendar, label: 'Calendar' },
   { href: '/projects', icon: FolderGit2, label: 'Projects' },
   { href: '/people', icon: Users, label: 'People' },
   { href: '/memory', icon: Brain, label: 'Memory' },
-  { href: '/nerve-center', icon: Activity, label: 'Nerve Center' },
   { href: '/docs', icon: FileText, label: 'Docs' },
   { href: '/cron', icon: Clock, label: 'Cron' },
 ]

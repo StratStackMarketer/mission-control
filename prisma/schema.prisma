@@ -139,3 +139,14 @@ model CalendarEvent {
   @@index([startTime])
   @@index([googleEventId])
 }
+
+model Idea {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  status      String   @default("Idea")
+  confidence  Int      @default(5)
+  tags        String?  // JSON array as string
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

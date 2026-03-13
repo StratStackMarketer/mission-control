@@ -3,23 +3,23 @@
 
 /* Mission Control Design System - JMobbin Style */
 @theme {
-  /* Base Colors */
-  --color-bg-page: #F7F7FB;
-  --color-bg-card: #FFFFFF;
-  --color-bg-hover: #F9FAFB;
-  --color-border: #EEEEEE;
+  /* Base Colors - Dark Mode */
+  --color-bg-page: #0F0F1E;
+  --color-bg-card: #1A1A2E;
+  --color-bg-hover: #252535;
+  --color-border: #2D2D3D;
   
   /* Primary Palette */
   --color-primary: #5B4EE8;
-  --color-primary-light: #F0EFFE;
+  --color-primary-light: #2D2640;
   --color-success: #10B981;
   --color-warning: #F59E0B;
   --color-danger: #EF4444;
   
-  /* Text Colors */
-  --color-text-primary: #1A1A2E;
-  --color-text-secondary: #6B7280;
-  --color-text-muted: #9CA3AF;
+  /* Text Colors - Dark Mode */
+  --color-text-primary: #F0F0F0;
+  --color-text-secondary: #B4B4C4;
+  --color-text-muted: #8A8A9E;
   
   /* Chart Colors */
   --color-chart-green: #A8E063;
@@ -38,23 +38,23 @@
 }
 
 :root {
-  /* CSS Variables */
-  --bg-page: #F7F7FB;
-  --bg-card: #FFFFFF;
-  --bg-hover: #F9FAFB;
-  --border: #EEEEEE;
+  /* CSS Variables - Dark Mode */
+  --bg-page: #0F0F1E;
+  --bg-card: #1A1A2E;
+  --bg-hover: #252535;
+  --border: #2D2D3D;
   
   --primary: #5B4EE8;
-  --primary-light: #F0EFFE;
-  --primary-hover: #4A3DD7;
+  --primary-light: #2D2640;
+  --primary-hover: #6B5EF8;
   
   --success: #10B981;
   --warning: #F59E0B;
   --danger: #EF4444;
   
-  --text-primary: #1A1A2E;
-  --text-secondary: #6B7280;
-  --text-muted: #9CA3AF;
+  --text-primary: #F0F0F0;
+  --text-secondary: #B4B4C4;
+  --text-muted: #8A8A9E;
   
   --border-focus: #5B4EE8;
   
@@ -209,8 +209,8 @@ p {
 
 .btn-secondary {
   background: transparent;
-  color: #374151;
-  border: 1px solid #E5E7EB;
+  color: #F0F0F0;
+  border: 1px solid #2D2D3D;
 }
 
 .btn-secondary:hover {
@@ -284,9 +284,9 @@ p {
 }
 
 .badge-default {
-  background: #F3F4F6;
+  background: #2D2D3D;
   color: var(--text-secondary);
-  border: 1px solid #E5E7EB;
+  border: 1px solid #3D3D4D;
 }
 
 .badge-primary {
@@ -295,31 +295,31 @@ p {
 }
 
 .badge-success {
-  background: #D1FAE5;
+  background: #1F4D3F;
   color: var(--success);
 }
 
 .badge-warning {
-  background: #FEF3C7;
+  background: #4D3F1F;
   color: var(--warning);
 }
 
 .badge-danger {
-  background: #FEE2E2;
+  background: #4D2F2F;
   color: var(--danger);
 }
 
 /* Status Badges */
-.badge-todo { background: #F3F4F6; color: var(--text-secondary); }
+.badge-todo { background: #2D2D3D; color: var(--text-secondary); }
 .badge-in_progress { background: var(--primary-light); color: var(--primary); }
-.badge-done { background: #D1FAE5; color: var(--success); }
-.badge-blocked { background: #FEE2E2; color: var(--danger); }
+.badge-done { background: #1F4D3F; color: var(--success); }
+.badge-blocked { background: #4D2F2F; color: var(--danger); }
 
 /* Priority Badges */
-.badge-low { background: #F3F4F6; color: var(--text-secondary); }
+.badge-low { background: #2D2D3D; color: var(--text-secondary); }
 .badge-medium { background: var(--primary-light); color: var(--primary); }
-.badge-high { background: #FEF3C7; color: var(--warning); }
-.badge-urgent { background: #FEE2E2; color: var(--danger); }
+.badge-high { background: #4D3F1F; color: var(--warning); }
+.badge-urgent { background: #4D2F2F; color: var(--danger); }
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
@@ -453,7 +453,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid #F3F4F6;
+  border-bottom: 1px solid #2D2D3D;
 }
 
 .activity-row:last-child {

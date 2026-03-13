@@ -14,13 +14,15 @@ import {
   Brain,
   Activity,
   Lightbulb,
-  TrendingUp
+  TrendingUp,
+  Network
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navItems = [
   { href: '/', icon: Home, label: 'Dashboard' },
   { href: '/nerve-center', icon: Activity, label: 'Nerve Center' },
+  { href: '/org-chart', icon: Network, label: 'Agent Fleet' },
   { href: '/ideas', icon: Lightbulb, label: 'Ideas' },
   { href: '/tasks', icon: CheckSquare, label: 'Tasks' },
   { href: '/approvals', icon: Shield, label: 'Approvals' },
